@@ -1,0 +1,22 @@
+.project-container{
+    position: relative;
+    margin-left: 700px; 
+    flex-grow: 1; /* Takes remaining space */
+    padding: 50px;
+    color: #fff;
+    overflow-y: auto; /* Scrollable if needed */
+    
+}
+.project-content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+.project-content ul{
+    display: flex;
+}
+.project-content ul li img{
+    width: 130px;
+    height: auto;
+}

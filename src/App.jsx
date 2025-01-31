@@ -1,9 +1,9 @@
-
+import Home from "./slides/home"
 function App() {
 
   return (
     <>
-     
+     <Home/>
     </>
   )
 }

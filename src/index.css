@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+    background: #121212;
+    color: #fff;
+    padding: 20px;
+  }
+  body{
+    background-color: #1C1816;
+}

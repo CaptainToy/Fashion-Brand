@@ -1,0 +1,82 @@
+.content {
+    position: relative;
+    margin-left: 700px; 
+    flex-grow: 1; /* Takes remaining space */
+    padding: 50px;
+    color: #fff;
+    overflow-y: auto; /* Scrollable if needed */
+    
+  }
+  
+  .title {
+    width: 300px;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 70px;
+  }
+  
+  .highlight {
+    color: #444;
+  }
+  
+  .description {
+    width: 480px;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #bbb;
+  }
+  
+  .stats {
+    display: flex;
+    margin-top: 30px;
+    gap: 40px;
+    width: 91px;
+    height: 122px;
+  }
+  
+  .stat h2 {
+    font-family: poppins;
+    font-size: 75px;
+    color: #fff;
+    font-weight: 900;
+  }
+  
+  .stat p {
+    font-size: 14px;
+    color: #bbb;
+    margin-top: -10px;
+  }
+  
+  .cards {
+    width: 70%;
+    height: 1fr;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+  }
+ .icon-bi{
+  font-size: 28px;
+  margin-left: -170px;
+ margin-bottom: 10px;
+ }
+  
+  .orange {
+    width: 400px;
+    background: #ff6b00;
+  }
+  
+  .green {
+    background: #4caf50;
+    width: 500px;
+
+  }
+  
