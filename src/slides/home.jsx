@@ -2,6 +2,7 @@ import Content from "../component/content/content"
 import Header from "../component/header/header"
 import Sidebar from "../component/sidebar/sidebar"
 import Project from "../component/project/project"
+import Experience from "../component/experience/experience"
 
 import"./home.css"
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
       <div>
          <Content/>
          <Project/>
+         <Experience/>
       </div>
       </>
     )
