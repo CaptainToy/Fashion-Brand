@@ -7,23 +7,23 @@ import"./home.css"
 import ToolListApp from "../component/Tools/Tools"
 import Design from "../component/design/design"
 import ContactForm from "../component/ContactForm/ContactForm"
-function Home() {
+function Tools() {
 
     return (
       <>
        <Header/>
       <div className="home-container"> <Sidebar/></div>
       <div>
-         <Content/>
-         <Project/>
-         <Experience/>
+         {/* <Content/> */}
+         {/* <Project/> */}
+         {/* <Experience/> */}
          <ToolListApp/>
-         <Design/>
+         {/* <Design/> */}
          <ContactForm/>
       </div>
       </>
     )
   }
   
-  export default Home
+  export default Tools
   

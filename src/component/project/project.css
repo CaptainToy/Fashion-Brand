@@ -80,3 +80,77 @@
     opacity: 1;
     transform: rotate(180deg);
 }
+/* For small devices (portrait phones, less than 600px) */
+@media only screen and (max-width: 599px) {
+    .project-container {
+        margin-left: 0; /* Remove the left margin for smaller screens */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .project-card {
+        width: 100%; /* Make cards full-width */
+        padding: 15px 20px; /* Adjust padding */
+    }
+
+    .project-image {
+        width: 80px; /* Smaller image size */
+    }
+
+    .project-card-title {
+        font-size: 1.1rem; /* Adjust title size */
+    }
+
+    .project-card-description {
+        font-size: 0.9rem; /* Adjust description font size */
+    }
+}
+
+/* For medium devices (tablets, 600px to 768px) */
+@media only screen and (max-width: 768px) {
+    .project-container {
+        margin-left: 0; /* Remove left margin */
+        padding: 30px; /* Slightly less padding */
+    }
+
+    .project-card {
+        width: 90%; /* Cards take 90% width */
+        padding: 10px 20px; /* Adjust padding */
+    }
+
+    .project-image {
+        width: 90px; /* Adjust image size */
+    }
+
+    .project-card-title {
+        font-size: 1.2rem; /* Adjust title size */
+    }
+
+    .project-card-description {
+        font-size: 0.95rem; /* Adjust description font size */
+    }
+}
+
+/* For large devices (desktops, 769px and up) */
+@media only screen and (min-width: 769px) {
+    .project-container {
+        margin-left: 700px; /* Keep the original margin for larger screens */
+        padding: 50px; /* Keep padding as it is */
+    }
+
+    .project-card {
+        width: 600px; /* Keep the card width */
+        padding: 20px 40px; /* Keep the padding */
+    }
+
+    .project-image {
+        width: 90px; /* Keep the image size */
+    }
+
+    .project-card-title {
+        font-size: 1.3rem; /* Keep the title size */
+    }
+
+    .project-card-description {
+        font-size: 1rem; /* Keep the description font size */
+    }
+}

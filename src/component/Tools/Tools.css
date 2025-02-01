@@ -1,0 +1,151 @@
+/* Global Styles */
+.toollist-container {
+    position: relative;
+    margin-left: 700px; 
+    flex-grow: 1; 
+    padding: 50px;
+    color: #fff;
+    overflow-y: auto; 
+  }
+  .toolist-title {
+    width: 300px;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 70px;
+  }
+  
+  .toollist-highlight {
+    color: #444;
+  }
+  
+  /* Grid Layout */
+  .toollist-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  @media (min-width: 640px) {
+    .toollist-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Card Styling */
+  .toollist-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .toollist-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Icon Styling */
+  .toollist-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+  }
+  
+  /* Text Styling */
+  .toollist-title {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .toollist-desc {
+    color: #b0b0b0;
+    font-size: 14px;
+  }
+  /* Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .toollist-container {
+    margin-left: 0;
+    padding: 20px;
+  }
+  
+  .toolist-title {
+    width: 100%;
+    font-size: 40px;
+    line-height: 45px;
+  }
+  
+  .toollist-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .toollist-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .toollist-icon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .toollist-title {
+    font-size: 14px;
+  }
+  
+  .toollist-desc {
+    font-size: 12px;
+  }
+}
+
+/* Small Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .toollist-container {
+    /* margin-left: 0; */
+    padding: 20px;
+  }
+  
+  .toolist-title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 55px;
+  }
+  
+  .toollist-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .toollist-card {
+    flex-direction: row;
+  }
+  
+  .toollist-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Laptops and Small Desktops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .toollist-container {
+    /* margin-left: 100px; */
+    padding: 30px;
+  }
+  
+  .toolist-title {
+    font-size: 40px;
+    line-height: 65px;
+  }
+  
+  .toollist-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Large Screens (max-width: 1280px) */
+@media (max-width: 1280px) {
+ .toolist-title {
+    font-size: 60px;
+  }
+}

@@ -7,17 +7,17 @@ import"./home.css"
 import ToolListApp from "../component/Tools/Tools"
 import Design from "../component/design/design"
 import ContactForm from "../component/ContactForm/ContactForm"
-function Home() {
+function ToolDesign() {
 
     return (
       <>
        <Header/>
       <div className="home-container"> <Sidebar/></div>
       <div>
-         <Content/>
-         <Project/>
-         <Experience/>
-         <ToolListApp/>
+         {/* <Content/> */}
+         {/* <Project/> */}
+         {/* <Experience/> */}
+         {/* <ToolListApp/> */}
          <Design/>
          <ContactForm/>
       </div>
@@ -25,5 +25,5 @@ function Home() {
     )
   }
   
-  export default Home
+  export default ToolDesign
   

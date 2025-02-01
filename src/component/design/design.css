@@ -1,0 +1,177 @@
+.design-container {
+    position: relative;
+    margin-left: 670px; 
+    flex-grow: 1; 
+    padding: 50px;
+    color: #fff;
+    overflow-y: auto; 
+    overflow: hidden;
+}
+
+.design-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.design-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.design-card {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 10px;
+    width: 600px;
+    position: relative;
+    gap: 15px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.design-card:hover {
+    background-color: #292422;
+}
+
+.design-image {
+    width: 110px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.design-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.design-card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.design-card-description {
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.design-card::after {
+    content: "↗";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ff6b00;
+    font-size: 22px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.design-card:hover::after {
+    opacity: 1;
+    transform: rotate(180deg);
+}
+.design {
+    width: 100px;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 70px;
+    margin-left: 40px;
+  }
+  
+  .deshighlight {
+    color: #444;
+  }
+  /* Default styles are already provided, now adding media queries */
+
+/* Extra Large Screens (Desktops, Large Monitors) */
+@media (max-width: 1440px) {
+    .design-container {
+        margin-left: 500px;
+        padding: 40px;
+    }
+}
+
+/* Laptops & Small Desktops */
+@media (max-width: 1024px) {
+    .design-container {
+        margin-left: 300px;
+        padding: 30px;
+    }
+    .design-card {
+        width: 500px;
+        padding: 15px 30px;
+    }
+    .design {
+        /* text-align: center; */
+        font-size: 70px;
+        /* margin-left: 20px; */
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .design-container {
+        margin-left: 0;
+        padding: 20px;
+    }
+    .design-card {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .design-image {
+        width: 90px;
+    }
+    .design {
+        font-size: 60px;
+        margin-left: 10px;
+    }
+    .design {
+        /* text-align: center; */
+      }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .design-container {
+        padding: 15px;
+    }
+    .design-content ul {
+        gap: 10px;
+    }
+    .design-card {
+        padding: 10px 20px;
+        width: 100%;
+    }
+    .design-image {
+        width: 70px;
+    }
+    .design {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 320px) {
+    .design-container {
+        padding: 10px;
+    }
+    .design-card {
+        padding: 8px 15px;
+    }
+    .design-image {
+        width: 60px;
+    }
+    .design {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}

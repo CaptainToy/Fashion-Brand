@@ -7,23 +7,23 @@ import"./home.css"
 import ToolListApp from "../component/Tools/Tools"
 import Design from "../component/design/design"
 import ContactForm from "../component/ContactForm/ContactForm"
-function Home() {
+function portfolio() {
 
     return (
       <>
        <Header/>
       <div className="home-container"> <Sidebar/></div>
       <div>
-         <Content/>
-         <Project/>
+         {/* <Content/>
+         <Project/> */}
          <Experience/>
-         <ToolListApp/>
-         <Design/>
+         {/* <ToolListApp/>
+         <Design/> */}
          <ContactForm/>
       </div>
       </>
     )
   }
   
-  export default Home
+  export default portfolio
   
