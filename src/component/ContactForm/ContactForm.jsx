@@ -4,8 +4,8 @@ import "./ContactForm.css";
 export default function ContactForm() {
   return (
     <div className="form-container">
-          <h1 className="design">
-            DESIGN <br /><span className="deshighlight">THOUGHTS</span>
+          <h1 className="form-design">
+            DESIGN <br /><span className="form-deshighlight">THOUGHTS</span>
             </h1>
       <form className="contact-form">
         <div className="form-group-row">

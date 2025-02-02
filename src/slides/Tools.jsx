@@ -12,15 +12,11 @@ function Tools() {
     return (
       <>
        <Header/>
-      <div className="home-container"> <Sidebar/></div>
       <div>
-         {/* <Content/> */}
-         {/* <Project/> */}
-         {/* <Experience/> */}
          <ToolListApp/>
-         {/* <Design/> */}
          <ContactForm/>
       </div>
+      <div className="home-container"> <Sidebar/></div>
       </>
     )
   }
