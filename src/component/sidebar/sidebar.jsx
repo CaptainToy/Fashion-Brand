@@ -17,10 +17,10 @@ const Sidebar = () => {
         A Software Engineer who has developed countless innovative solutions.
       </p>
       <div className="social-icons">
-        <i className="bi bi-whatsapp"></i>
-        <i className="bi bi-twitter"></i>
-        <i className="bi bi-instagram"></i>
-        <i className="bi bi-tiktok"></i>
+       <a href="https://wa.me/qr/VJONEQ5ZXJP7F1 "> <i className="bi bi-whatsapp"></i></a>
+       <a href="https://github.com/CaptainToy"> <i className="bi bi-github"></i></a>
+       <a href="https://www.instagram.com/oluwakorede_abdulmalik?igsh=MWdhNXBzdWVsYm1qOQ=="> <i className="bi bi-instagram"></i></a>
+       <a href="https://www.linkedin.com/in/abdulsalam-olukorede-b25831269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i className="bi bi-linkedin"></i></a>
       </div>
     </div>
   );
