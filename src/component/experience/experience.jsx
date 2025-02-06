@@ -2,21 +2,21 @@ const experience = ()=>{
     const sampleData = [
         {
             id: 1,
-            title: "Revo",
-            description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto placeat ex officia maxime obcaecati ullam consequatur. Ab quia dolorem adipisci commodi deserunt aliquid, cumque voluptatibus consequatur, aliquam voluptate assumenda? Est!",
-            date: "Jan 2020 - Present"
+            title: "Brij.NG",
+            description: "A leading logistics company where I have been working as a Front-End Developer since 2023, contributing to the development of a seamless and efficient user experience for their logistics platform.",
+            date: "Aug 2023 - Present"
         },
         {
             id: 2,
-            title: "NajmAI",
-            description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto placeat ex officia maxime obcaecati ullam consequatur. Ab quia dolorem adipisci commodi deserunt aliquid, cumque voluptatibus consequatur, aliquam voluptate assumenda? Est!",
-            date: "Jan 2020 - Present"
+            title: "Yetland School",
+            description: "Developed a School Management System for online result processing, ensuring a smooth and automated workflow for administrators, teachers, and students.",
+            date: "Jan 2023 - Sep 2024"
         },
         {
             id: 3,
-            title: "Nashra",
-            description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto placeat ex officia maxime obcaecati ullam consequatur. Ab quia dolorem adipisci commodi deserunt aliquid, cumque voluptatibus consequatur, aliquam voluptate assumenda? Est!",
-            date: "Jan 2020 - Present"
+            title: "Tiwango Limited",
+            description: "An NGO where I worked as a Front-End Developer from 2022 to 2024, helping build an intuitive and user-friendly digital platform to support their mission.",
+            date: " Aug 2022 - Feb 2024"
         },
     ];
     return(

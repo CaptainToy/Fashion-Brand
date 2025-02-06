@@ -28,11 +28,11 @@ const Content = () => {
       <div className="cards">
         <div className="card orange">
           <div className="icon-bi"><i class="bi bi-bookmark-check"></i></div>
-          <p>Dynamic Animation, Motion Design</p>
+          <p>Dynamic Animation, Responsive Design</p>
         </div>
         <div className="card green">
         <div className="icon-bi"><i class="bi bi-bookmark-check"></i></div>
-          <p>Framer, Figma, WordPress, ReactJS</p>
+          <p>CSS Framworks, Figma, Redux, ReactJS</p>
         </div>
       </div>
     </div>

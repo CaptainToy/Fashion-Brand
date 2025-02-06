@@ -47,6 +47,7 @@
     height: auto;
     border-radius: 8px;
     object-fit: cover;
+    background: white;
 }
 
 .project-info {
