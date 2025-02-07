@@ -2,7 +2,7 @@ import "./Project.css";
 import ceo from "../../assets/ceo.jpg"; 
 // img
 import CFPH from "../../assets/img/cfphf.png";
-import GRand from "../../assets/img/grand.png";
+import GRand from "../../assets/newlogo.png";
 import Yet from "../../assets/img/yetland.jpg";
 
 const Project = () => {
@@ -16,8 +16,8 @@ const Project = () => {
         },
         {
             id: 2,
-            title: "Grandural",
-            description: "Banding Website Development",
+            title: "CTTech.NG",
+            description: "Software company",
             image: GRand,
             href: "https://captaintoy.github.io/Grandural.2/"
         },

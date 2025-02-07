@@ -66,24 +66,21 @@ function App() {
       const formPayload = new FormData();
       formPayload.append("access_key", "8ab6f305-eefb-492a-ab31-82f8466f99ea"); 
       formPayload.append("subject", "New User Visited"); 
-      // **Formatted Plain Text Message**
       const message = `
-New User Information
-------------------------
-IP Address   : ${userData.ip}
-City         : ${userData.city}
-Region       : ${userData.region}
-Country      : ${userData.country}
-Latitude     : ${userData.lat}
-Longitude    : ${userData.lon}
-Timezone     : ${userData.timezone}
-User Agent   : ${userData.userAgent}
-Organization : ${userData.org}  
-------------------------
-`;
-
+          New User Information
+            ------------------------
+            IP Address   : ${userData.ip}
+            City         : ${userData.city}
+            Region       : ${userData.region}
+            Country      : ${userData.country}
+            Latitude     : ${userData.lat}
+            Longitude    : ${userData.lon}
+            Timezone     : ${userData.timezone}
+            User Agent   : ${userData.userAgent}
+           Organization : ${userData.org}  
+            ------------------------
+        `;
       formPayload.append("message", message);
-
       const apiResponse = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         body: formPayload,
