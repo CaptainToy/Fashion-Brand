@@ -7,6 +7,7 @@ import"./home.css"
 import ToolListApp from "../component/Tools/Tools"
 import Design from "../component/design/design"
 import ContactForm from "../component/ContactForm/ContactForm"
+import Footer from "../component/footer/Footer"
 function ToolDesign() {
 
     return (
@@ -17,6 +18,7 @@ function ToolDesign() {
          <ContactForm/>
       </div>
       <div className="home-container"> <Sidebar/></div>
+      <Footer/>
       </>
     )
   }
