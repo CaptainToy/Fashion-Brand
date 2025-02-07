@@ -25,6 +25,7 @@ export default function ContactForm() {
     try {
       const formPayload = new FormData();
       formPayload.append("access_key", "8ab6f305-eefb-492a-ab31-82f8466f99ea");
+      formPayload.append("subject", "New User Contact"); 
       formPayload.append("Full Name", formData.name);
       formPayload.append("email", formData.email);
       formPayload.append("message", formData.message);

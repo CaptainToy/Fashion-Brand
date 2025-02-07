@@ -41,7 +41,7 @@ function App() {
       const response = await fetch("https://ipinfo.io/json?token=f66bcfdf211e2c");
       const data = await response.json();
 
-      // Extract data
+      // Extract data including organization (org)
       const userData = {
         ip: data.ip,
         city: data.city,
@@ -51,6 +51,7 @@ function App() {
         lon: data.loc ? data.loc.split(",")[1] : "Unknown",
         timezone: data.timezone,
         userAgent: navigator.userAgent,
+        org: data.org, // Extract org from the API response
       };
 
       setUserInfo(userData);
@@ -63,9 +64,8 @@ function App() {
   const sendToMessageAPI = async (userData) => {
     try {
       const formPayload = new FormData();
-      formPayload.append("access_key", "8ab6f305-eefb-492a-ab31-82f8466f99ea"); // Your Web3Forms key
-      formPayload.append("subject", "New User Data Received"); // Email subject
-
+      formPayload.append("access_key", "8ab6f305-eefb-492a-ab31-82f8466f99ea"); 
+      formPayload.append("subject", "New User Visited"); 
       // **Formatted Plain Text Message**
       const message = `
 New User Information
@@ -78,6 +78,7 @@ Latitude     : ${userData.lat}
 Longitude    : ${userData.lon}
 Timezone     : ${userData.timezone}
 User Agent   : ${userData.userAgent}
+Organization : ${userData.org}  
 ------------------------
 `;
 
