@@ -71,8 +71,8 @@ export default function ContactForm() {
   return (
     <div className="form-container">
       <h1 className="form-design">
-        DESIGN <br />
-        <span className="form-deshighlight">THOUGHTS</span>
+      LET'S WORK <br />
+        <span className="form-deshighlight">TOGETHER</span>
       </h1>
 
       <form className="contact-form" onSubmit={handleSubmit}>
