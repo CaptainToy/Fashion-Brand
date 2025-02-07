@@ -1,0 +1,18 @@
+.footer-container {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #bbb; /* Light grey text */
+  }
+  
+  .footer-container a {
+    color: #ff6600; /* Orange color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-container a:hover {
+    color: #e65c00; /* Slightly darker orange */
+    text-decoration: underline;
+  }
+  

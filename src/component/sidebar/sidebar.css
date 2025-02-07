@@ -34,7 +34,7 @@
     object-fit: cover;
     display: block;
     /* background: #e63946; */
-    mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
     margin-top: 100px;
     border: 1px solid white;
     padding: 10px;
@@ -70,11 +70,11 @@
 
 .social-icons a {
     font-size: 20px;
-    color: #ff6600;
+    color: white;
     cursor: pointer;
     transition: 0.3s;
-    border: 1px solid #ff6600;
-    padding: 3px 10px;
+    border: 1px solid white;
+    padding: 5px 13px;
     border-radius: 50%;
 }
 

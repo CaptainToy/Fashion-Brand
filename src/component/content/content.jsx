@@ -31,7 +31,7 @@ const Content = () => {
           <p>Dynamic Animation, Responsive Design</p>
         </div>
         <div className="card green">
-        <div className="icon-bi"><i class="bi bi-bookmark-check"></i></div>
+        <div className="icon-bi"><i class="bi bi-bounding-box"></i></div>
           <p>CSS Framworks, Figma, Redux, ReactJS</p>
         </div>
       </div>
